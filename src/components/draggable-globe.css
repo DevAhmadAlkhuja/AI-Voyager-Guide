@@ -1,0 +1,36 @@
+.draggable-globe {
+  width: 100%;
+}
+
+.draggable-globe[data-size="sm"] {
+  width: 84px;
+  height: 84px;
+}
+
+.draggable-globe[data-size="md"] {
+  width: 180px;
+  height: 180px;
+}
+
+.draggable-globe[data-size="lg"] {
+  width: 100%;
+  max-width: 560px;
+}
+
+.draggable-globe__svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.18));
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.draggable-globe[data-variant="flat"] .draggable-globe__svg {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+}
+
+.draggable-globe__svg.is-dragging {
+  cursor: grabbing;
+}
